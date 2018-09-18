@@ -15,14 +15,14 @@ import javax.persistence.*;
 public class Car {
 
     @Id
-    @GeneratedValue(generator = "user_gen_seq", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(name = "user_gen_seq", sequenceName = "user_seq", allocationSize = 1)
+    @GeneratedValue(generator = "car_gen_seq", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "car_gen_seq", sequenceName = "car_seq", allocationSize = 1)
     private Long id;
 
     private String model;
     private Integer doorNumber;
     private String transmission;
-    private String numberPlate;
+    //private String numberPlate;
     private Integer seats;
     private float pricePerHour;
 
@@ -31,7 +31,5 @@ public class Car {
 
     @Enumerated(EnumType.STRING)
     private FuelType fuelType;
-
-
 
 }

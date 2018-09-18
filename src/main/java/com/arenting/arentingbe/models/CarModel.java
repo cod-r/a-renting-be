@@ -18,7 +18,7 @@ public class CarModel {
     private String model;
     private Integer doorNumber;
     private String transmission;
-    private String numberPlate;
+//    private String numberPlate;
     private Integer seats;
     private float pricePerHour;
 
