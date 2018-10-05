@@ -1,10 +1,10 @@
 package com.arenting.arentingbe.controllers;
 
-import com.arenting.arentingbe.entities.NumberPlate;
 import com.arenting.arentingbe.models.CarModel;
 import com.arenting.arentingbe.models.NumberPlateModel;
 import com.arenting.arentingbe.services.CarService;
 import com.arenting.arentingbe.services.NumberPlateService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +23,7 @@ public class CarController {
         this.numberPlateService = numberPlateService;
     }
 
-
+    @CrossOrigin
     @GetMapping
     public List<CarModel> getAllCars() {
         return carService.getAllCars();
